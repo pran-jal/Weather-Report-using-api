@@ -7,7 +7,7 @@ location = input("Enter the city name: ")
 complete_api_link = "https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid="+api_key
 api_data = requests.get(complete_api_link).json()
 
-if api_data['cod'] not in range(200, 299):
+if api_data['cod'] not in range(200, 300):
     print(api_data['message'])
     quit()
 
