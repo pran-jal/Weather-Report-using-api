@@ -29,5 +29,5 @@ data = ["-------------------------------------------------------------",
 data='\n'.join(data)
 print(data)
 
-with open('weather_report','w') as file:
+with open('weather_report.txt','w') as file:
     file.write(data)
